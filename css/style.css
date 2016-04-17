@@ -1,0 +1,141 @@
+body{
+   font: 400 14px/14px Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+nav {
+    text-align: center;
+}
+.nav_menu{
+    margin: 0 auto 20px;
+    padding: 0;
+    background: #000;
+    height: 35px;
+}
+.nav_menu li{
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 120px;
+}
+.nav_menu__item{
+    border-bottom: none;
+    height: 35px;
+    margin: 0 5px;
+    text-align: center;
+}
+.dropdown_menu{
+    position: relative;
+    background: url(../img/arrow-down.png) 95% no-repeat;
+}
+.dropdown_menu ul{
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+.menu__link{
+    color: #fff;
+    box-sizing:border-box;   
+    display: inline-block;
+    height: 35px;
+    padding-top: 10px;
+    text-decoration: none;
+    width: 120px;
+}
+.sub_menu{
+    position: absolute;
+    top:35px;
+    display: none;
+    width: 120px;
+    text-align: center;
+    background: #898888;
+    box-shadow: 0 0 5px #000;
+    z-index: 2;
+}
+.dropdown_menu li + li{
+    border-top: 1px solid #fff;
+}
+.nav_menu .nav_menu__item .dropdown_menu .sub_menu{
+    margin-left: 120px;
+    top:0;
+}
+.nav_menu__item .dropdown_menu{
+    background: url(../img/arrow-right.png) 95% no-repeat;
+}
+li a:hover{
+    color: #ddd;
+}
+.select {
+    width: 240px;
+    margin: 0 auto;
+}
+/*checkbox*/
+.checkbox-wrap {
+    background: #99A5BE;
+    width: 600px;
+}
+h5 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0;
+}
+.js_form_wrapper, .form_wrapper{
+    display: inline-block;
+    margin: 0 50px;
+    padding: 20px;
+}
+.js_checkbox span input[type="checkbox"]{
+    display: none;
+}
+.js_checkbox{
+    height: 42px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.js_checkbox span {
+    background: url("../img/checkbox-sprite.png") no-repeat 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 17px;
+    margin-right:10px;
+    width: 17px;
+}
+.js_check_active span{
+    background-position: 0 -17px;
+}
+
+.checkbox{
+    height: 42px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.checkbox input[type=checkbox] {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+.checkbox label {
+    cursor: pointer;
+}
+.checkbox label:after {
+    background: url(../img/checkbox-2.png);
+    content: " ";
+    display: inline-block;
+    height: 17px;
+    margin-left: 15px;
+    position: relative;
+    top: 3px;
+    width: 17px;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+.checkbox label:hover:after {
+    background-position: 0 -34px;
+}
+.checkbox input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}

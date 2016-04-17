@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solovei JS9-10</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/fancySelect.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+    <script src="js/fancySelect.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+<!-- menu -->
+        <nav>
+            <ul>
+                <li><a  href="#">Nav 1</a></li>
+                <li><a href="#">Nav 2</a>
+                    <ul>
+                        <li><a href="#">Nav 2.1</a>
+                            <ul>
+                                <li><a href="#">Nav 2.1.1</a></li>
+                                <li><a href="#">Nav 2.1.2</a></li>
+                                <li><a href="#">Nav 2.1.3</a></li>
+                                <li><a href="#">Nav 2.1.4</a></li>
+                                <li><a href="#">Nav 2.1.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 2.2</a></li>
+                        <li><a href="#">Nav 2.3</a>
+                            <ul>
+                                <li><a href="#">Nav 2.3.1</a></li>
+                                <li><a href="#">Nav 2.3.2</a>
+                                    <ul>
+                                        <li><a href="#">Nav 2.3.2.1</a></li>
+                                        <li><a href="#">Nav 2.3.2.2</a></li>
+                                        <li><a href="#">Nav 2.3.2.3</a></li>
+                                        <li><a href="#">Nav 2.3.2.4</a></li>
+                                        <li><a href="#">Nav 2.3.2.5</a></li>
+                                        <li><a href="#">Nav 2.3.2.6</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nav 2.3.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 2.4</a></li>
+                    </ul>
+                </li>
+                <li ><a href="#">Nav 3</a>
+                    <ul>
+                        <li><a href="#">Nav 3.1</a></li>
+                        <li><a href="#">Nav 3.2</a></li>
+                        <li><a href="#">Nav 3.3</a></li>
+                        <li><a href="#">Nav 3.4</a></li>
+                        <li><a href="#">Nav 3.5</a></li>
+                        <li><a href="#">Nav 3.6</a></li>
+                        <li><a href="#">Nav 3.7</a></li>
+                        <li><a href="#">Nav 3.8</a></li>
+                    </ul>
+                </li>
+                <li ><a href="#">Nav 4</a></li>
+                <li ><a href="#">Nav 5</a></li>
+            </ul>
+        </nav>
+<!-- jcarousel -->
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="img/img1.jpg" alt=""></li>
+                    <li><img src="img/img2.jpg" alt=""></li>
+                    <li><img src="img/img3.jpg" alt=""></li>
+                    <li><img src="img/img4.jpg" alt=""></li>
+                    <li><img src="img/img5.jpg" alt=""></li>
+                    <li><img src="img/img6.jpg" alt=""></li>
+                </ul>
+            </div>
+            <p class="photo-credits">Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a></p>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            <p class="jcarousel-pagination"></p>
+        </div>
+<!-- select -->
+        <div class="select">
+            <select class="basic">
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+                <option>Lorem Ipsum</option>
+            </select>
+        </div>
+<!-- checkbox -->
+        <div class="checkbox-wrap">
+            <div class="js_form_wrapper">
+                <form class="js_form">
+                    <h5>Checkbox style JQ</h5>
+                    <div class="js_checkbox">
+                        <span><input type="checkbox"></span><label>label 1</label>
+                    </div>
+                    <div class="js_checkbox">
+                        <span><input type="checkbox"></span><label>label 2</label>
+                    </div>
+                    <div class="js_checkbox">
+                        <span><input type="checkbox" checked = checked></span><label>label 3</label>
+                    </div>
+                </form>
+            </div>
+            <div class="form_wrapper">
+                <form class="form">
+                    <h5>Checkbox style CSS </h5>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox_1">
+                        <label for="checkbox_1">label 1</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox_2">
+                        <label for="checkbox_2">label 2</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" checked = checked id="checkbox_3">
+                        <label for="checkbox_3">label 3</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
